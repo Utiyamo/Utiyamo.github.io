@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+body{
+    background-color: #E9967A;
+    padding: 0;
+    margin: 0;
+}
+
+.hero {
+    width: 98vw;
+    height: 98vh;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    text-shadow: 1vw;
+  }
+
+.header-title{
+    z-index: 2;
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-family: 'Satisfy', cursive;
+}
+
+.header-primary {
+    font-size: 2.5em;
+    display: block;
+    font-weight: 700;
+    text-shadow: 0 13.36px 8.896px #FF6347,0 -2px 1px #E9967A;
+  }
+
+.header-sub {
+    font-size: 1em;
+    padding-left: 80px;
+    letter-spacing: 3px;
+    text-shadow: 0 13.36px 8.896px #FF6347,0 -2px 1px #E9967A;
+}
+
+.second-content{
+    width: 99vw;
+    height: 59vh;
+    text-align: center;
+    color: #000;
+    position: relative;
+    background-color: #fff;
+    font-family: 'Lobster', cursive;
+}
+
+.second-container{
+    position: relative;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.second-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 60px;
+    font-size: 40px;
+    color: #930E2C;
+    line-height: 42px;
+}
+
+.second-sub-header {
+    padding: 0 120px;
+    font-size: 22px;
+    color: #920E2C;
+    line-height: 35px;
+}
+
+.second-sub-content{
+    padding: 0 50px;
+    font-family: "Gotham Rounded Book";
+    font-size: 18px;
+    color: #000;
+    line-height: 36px;
+    text-align: center;
+}
+
+.second-data-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 392px;
+    margin: 0 auto;
+    padding-top: 74px;
+}
+
+.second-blocks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 392px;
+    margin: 0 auto;
+    padding-top: 74px;
+}
+
+.second-data-block{
+    display: flex;
+    flex-direction: column;
+    width: 104px;
+    height: 104px;
+    color: #E1E1E1;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    background-color: #FF0000;
+}
+
+.third-content{
+    width: 99vw;
+    height: 59vh;
+    padding-top: 10vw;
+    text-align: center;
+    color: #000;
+    position: relative;
+    background-color: #8B0000;
+    font-family: 'Lobster', cursive;
+}
+
+.third-header{
+    max-width: 160px;
+    width: max-content;
+    margin-right: 40px;
+    margin-bottom: 26px;
+}
+
+.third-header h2{
+    writing-mode: vertical-rl;
+    transform: scale(-1, -1);
+    text-align: right;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 40px;
+}
+
+.third-block{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.third-calendar{
+    width: 548px;
+    margin: 0 auto;
+}
+
+.calendar{
+    position: relative;
+    margin-bottom: 19px;
+    width: 548px;
+}
+
+.calendar span{
+    font-family: "Gotham Rounded Book";
+}
+
+.calendar__header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.calendar__month{
+    font-family: "Playfair Display";
+    font-size: 39px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.calendar__starts-at{
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: max-content;
+}
+
+.calendar__body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calendar__week{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 48px;
+    width: 100%;
+}
+
+.calendar__day{
+    position: relative;
+    flex: 0 0 14.28%;
+    height: 48px;
+    margin-bottom: 10px;
+    font-family: "Gotham Rounded Light";
+    font-size: 13px;
+    line-height: 48px;
+    text-align: center;
+}
