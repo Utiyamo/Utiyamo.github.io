@@ -205,3 +205,8 @@ body{
     line-height: 48px;
     text-align: center;
 }
+
+.number-countdown{
+    font-size: 48px;
+    color: white;
+}
