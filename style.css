@@ -152,61 +152,122 @@ body{
     margin: 0 auto;
 }
 
+.number-countdown{
+    font-size: 48px;
+    color: white;
+}
+
+.pic-ctn{
+    width: 100vw;
+    height: 200px;
+}
+
+@keyframes display {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    30% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    
+}
+
+.pic-ctn {
+    position: relative;
+    width: 100vw;
+    height: 300px;
+    margin-top: 15vh;
+}
+
+.pic-ctn > img {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 100px);
+    opacity: 0;
+    animation: display 10s infinite;
+}
+
+img:nth-child(2){
+    animation-delay: 2s;
+}
+
+img:nth-child(3){
+    animation-delay: 4s;
+}
+
+img:nth-child(4){
+    animation-delay: 6s;
+}
+
+img:nth-child(5){
+    animation-delay: 8s;
+}
+
 .calendar{
     position: relative;
-    margin-bottom: 19px;
-    width: 548px;
+    margin-bottom: 10px;
+    width: 540px;
 }
 
-.calendar span{
-    font-family: "Gotham Rounded Book";
+.calendar::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    background-color: #7A0A23;
+    height: 74%;
+    width: 84%;
+    z-index: -1;
 }
 
-.calendar__header{
+.calendar_header{
     display: flex;
     align-items: center;
     margin-bottom: 18px;
 }
 
-.calendar__month{
-    font-family: "Playfair Display";
-    font-size: 39px;
-    font-weight: 600;
-    color: #fff;
+.calendar_month {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    color: #930E2C;
+    text-align: right;
 }
 
-.calendar__starts-at{
+.calendar_starts-at {
     display: flex;
     position: relative;
     align-items: center;
     width: max-content;
 }
 
-.calendar__body{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.calendar__week{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 48px;
+.calendar_starts-at::before{
+    background-color: #930E2C;
+    right: 2%;
     width: 100%;
-}
-
-.calendar__day{
-    position: relative;
-    flex: 0 0 14.28%;
-    height: 48px;
-    margin-bottom: 10px;
-    font-family: "Gotham Rounded Light";
-    font-size: 13px;
-    line-height: 48px;
-    text-align: center;
-}
-
-.number-countdown{
-    font-size: 48px;
-    color: white;
+    content: '';
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    height: 110%;
+    transform: translate3d(0, -50%, 0);
+    z-index: -1;
 }
