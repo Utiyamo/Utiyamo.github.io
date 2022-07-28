@@ -1,138 +1,67 @@
-<html>
+<html lang="pt-br">
     <head>
-        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet" type="text/css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <title>Portifolio</title>
     </head>
     <body>
-        <script>
-            const countDownDate = new Date("Sep 18, 2021 15:00:00").getTime();
-
-            let x = setInterval(function () {
-                console.log('Date - ', countDownDate);
-                let now = new Date().getTime();
-                console.log('Now ', now);
-                let distance = countDownDate - now;
-
-                let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                let hours = Math.floor(distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
-                let minutes = Math.floor(distance % (1000 * 60 * 60) / (1000 * 60));
-                let seconds = Math.floor(distance % (1000 * 60) / 1000);
-
-                document.getElementById('days').innerHTML = days;
-                document.getElementById('hours').innerHTML = hours;
-                document.getElementById('minutes').innerHTML = minutes;
-
-                console.log(`Days = ${days} | Hours = ${hours} | Minutes = ${minutes}`);
-                //document.getElementById('seconds').innerHTML = seconds;
-
-            }, 1000);
-        </script>
-        <div class="hero">
-            <div class="pic-ctn">
-                <img src='' alt='' class="pic"/>
-                <img src='' alt='' class='pic'/>
-                <img src='' alt='' class='pic'/>
-            </div>
-            <h1 class="header-title">
-                <span class="header-primary">Amanda & Daniel</span>
-                <span class="header-sub">Campo Limpo Paulista, 18 de Setembro de 2021</span>
-            </h1>
-        </div>
-        <div class="second-content">
-            <div class="second-container">
-                <div class="second-body">
-                    <h2 class="second-header">
-                        <span>Vamos nos casar</span>
-                    </h2>
-                    <h3 class="second-sub-header">
-                        <span>Estamos nas núvens e queremos compartilhar todo nosso amor!</span>
-                    </h3>
-                    <div class="second-sub-content">
-                        <p>Por isso, criamos este site com um montão de coisas legais!</p>
+        <div>
+            <section class="aboutme">
+                <div class="card-profile">
+                    <div class="card-front">
                     </div>
-                    <div class="second-blocks">
-                        <div class="second-data-block">
-                            <span id='days' class="number-countdown"></span>
-                            <span>Dias</span>
-                        </div>
-                        <div class="second-data-block">
-                            <span id='hours' class="number-countdown"></span>
-                            <span>Horas</span>
-                        </div>
-                        <div class="second-data-block">
-                            <span id='minutes' class="number-countdown"></span>
-                            <span>Minutos</span>
-                        </div>
+                    <div class="card-back">
+                        <h2>Daniel Utiyama<br/>
+                            <span>Full-stack Developer</span>
+                        </h2>
+                    </div>
+                    <div>
+                        <a class="fas fa-address-card" aria-hidden="true" href="https://r6.op.gg/users/MID_Mordekaiser-5e39ad4eab75a1309b59bda1" >R6</a>
+                        <a class="far fa-address-card" aria-hidden="true" href="https://br.op.gg/summoner/userName=utiyamo" >LOL</a>
+                        <a class="fas fa-id-badge" aria-hidden="true" href="https://steamcommunity.com/id/utiyamo" >Steam</a>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="third-content">
-            <div class="third-header">
-                <h2>Nosso Grande Dia</h2>
-            </div>
-            <div class="third-block">
-               <div class="calendar">
-                   <div class="calendar_header">
-                        <h2 class="calendar-month">Set</h2>
-                        <div class="calendar_starts-at">
-                            <span>a partir das 15h00</span>
-                        </div>
-                   </div>
-                   <div class="calendar_body">
-                       <div class="calendar_week">
-                           <span>DOM</span>
-                           <span>SEG</span>
-                           <span>TER</span>
-                           <span>QUA</span>
-                           <span>QUI</span>
-                           <span>SEX</span>
-                           <span>SAB</span>
-                       </div>
-                       <div class="calendar_day"></div>
-                       <div class="calendar_day"></div>
-                       <div class="calendar_day"></div>
-                       <div class="calendar_day">1</div>
-                       <div class="calendar_day">2</div>
-                       <div class="calendar_day">3</div>
-                       <div class="calendar_day">4</div>
-                       <div class="calendar_day">5</div>
-                       <div class="calendar_day">6</div>
-                       <div class="calendar_day">7</div>
-                       <div class="calendar_day">8</div>
-                       <div class="calendar_day">9</div>
-                       <div class="calendar_day">10</div>
-                       <div class="calendar_Day">11</div>
-                       <div class="calendar_day">12</div>
-                       <div class="calendar_day">13</div>
-                       <div class="calendar_day">14</div>
-                       <div class="calendar_day">15</div>
-                       <div class="calendar_day">16</div>
-                       <div class="calendar_day">17</div>
-                       <div class="calendar_day--active">
-                           <span class="calendar_heart">
-                                <svg width="26" height="26" viewBox="0 0 26 28" xmlns="http://www.w3.org/2000/svg" version="1.1" fill="#000000" fill-opacity="0.8">
-                                    <g transform="translate(0,2)">
-                                        <path d="M22.20138,1.05815c-1.05178,-0.67252 -2.25662,-1.05815 -3.5466,-1.05815c-2.27503,0 -4.3061,1.19959 -5.65018,3.08637c-1.35328,-1.88678 -3.3855,-3.08637 -5.66398,-3.08637c-1.28078,0 -2.48561,0.38563 -3.542,1.05815c-2.26582,1.45445 -3.79862,4.2486 -3.79862,7.46441c0,0.91804 0.13003,1.79871 0.36364,2.62201c1.25891,6.57306 12.64096,14.85543 12.64096,14.85543v0c0,0 11.36824,-8.28237 12.63061,-14.85543c0.2336,-0.8233 0.36479,-1.70397 0.36479,-2.62201c0,-3.21581 -1.5328,-6.00462 -3.79862,-7.46441z"></path>
-                                    </g>
-                                </svg>
-                            </span>
-                            <span>18</span>
-                       </div>
-                       <div class="calendar_day">19</div>
-                       <div class="calendar_day">20</div>
-                       <div class="calendar_day">21</div>
-                       <div class="calendar_day">22</div>
-                       <div class="calendar_day">23</div>
-                       <div class="calendar_day">24</div>
-                       <div class="calendar_day">25</div>
-                       <div class="calendar_day">26</div>
-                       <div class="calendar_day">27</div>
-                       <div class="calendar_day">28</div>
-                       <div class="calendar_day">29</div>
-                       <div class="calendar_day">30</div>
-                   </div>
-               </div>
-            </div>
+                <div class="content-about">
+                    <h1 class="about-title">Olá, meu nome é Daniel</h1>
+                    <p class="about-text">Gosto de transformar problemas e desafios em projetos simples e descontraidos. Quando não estou trabalhando em códigos me encontrará cozinhando, assistindo uma série ou brincando com minhas filhas.</p>
+                    <br/>
+                    <p class="about-text">Sim, esse cara gato aqui do lado sou eu.</p>
+                    <div class="social-container">
+                        <ul class="social-icons">
+                            <li>
+                                <a href='https://www.instagram.com/Utiyamo/' >
+                                    <i class='fa fa-instagram'></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='https://www.facebook.com/dcutiyama' >
+                                    <i class='fa fa-facebook'></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='https://www.linkedin.com/in/daniel-utiyama-21a598177/' >
+                                    <i class='fa fa-linkedin'></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='https://github.com/Utiyamo' >
+                                    <i class='fa fa-github'></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="">
+                    
+                </div>
+            </section>
         </div>
     </body>
 </html>
