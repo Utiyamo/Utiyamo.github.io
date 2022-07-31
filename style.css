@@ -253,3 +253,123 @@ section{
     background-position: -120px;
     transition: all 0.3s ease;
 }
+
+.aboutme{
+
+}
+
+.aboutme .aboutme-text{
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0 0 6px;
+}
+@media (max-width: 767px){
+    .aboutme .aboutme-text h3{
+        font-size: 35px;
+    }
+}
+
+.aboutme .aboutme-text h6{
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+@media (max-width: 767px){
+    .aboutme .aboutme-text h6{
+        font-size: 18px;
+    }
+}
+
+.aboutme .aboutme-text p{
+    font-size: 18px;
+    max-width: 450px;
+}
+
+.aboutme .aboutme-text p mark{
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.aboutme .aboutme-list{
+    padding-top: 10px;
+}
+
+.aboutme .aboutme-list .media{
+    padding: 5px 0;
+}
+
+.aboutme .aboutme-list label{
+    color: #ffffff;
+    font-weight: 600;
+    width: 88px;
+    margin: 0;
+    position: relative;
+}
+
+.aboutme .aboutme-list label:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 11px;
+    width: 1px;
+    height: 12px;
+    background: #ffffff;
+    -moz-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    transform: ro   tate(15deg);
+    margin: auto;
+    opacity: 0.5;
+}
+
+.aboutme .aboutme-list p{
+    margin: 0;
+    font-size: 15px;
+}
+
+@media (max-width: 991px){
+    .aboutme .aboutme-avatar{
+        margin-top: 30px;
+    }
+}
+
+.aboutme .aboutme-section .counter {
+    padding: 22px 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+}
+
+.aboutme .aboutme-section .counter .count-data{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.aboutme .aboutme-section .counter .count{
+    font-weight: 700;
+    color: #01E596;
+    margin: 0 0 5px;
+}
+
+.aboutme .aboutme-section .counter p{
+    font-weight: 600;
+    margin: 0;
+}
+
+.aboutme mark{
+    background-image: linear-gradient(rgba(252, 83, 86, 0.6), rgba(252, 83, 86, 0.6));
+    background-size: 100% 3px;
+    background-repeat: no-repeat;
+    background-position: 0 bottom;
+    background-color: transparent;
+    padding: 0;
+    color: currentColor;
+}
+
+.aboutme .theme-color {
+    color: #fc5356;
+}
+.aboutme .dark-color {
+    color: #01E596;
+}
