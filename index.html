@@ -4,14 +4,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet" type="text/css" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link href="style.css" rel="stylesheet" type="text/css" />
         <title>Portifolio</title>
     </head>
     <body>
+        <div class="navigator">
+            <div class="navMenu row">
+                <span id="homeMenu" class="col-3">Ola</span>
+                <span id="aboutmeMenu" class="col-3">Myself</span>
+                <span id="workMenu" class="col-3">Works</span>
+            </div>
+        </div>
         <div>
-            <section class="aboutme">
+            <section id="presentation" class="presentation">
                 <div class="card-profile">
                     <div class="card-front">
                     </div>
@@ -29,7 +37,7 @@
                     <div class="social-container">
                         <ul class="social-icons">
                             <li>
-                                <a href='https://www.instagram.com/Utiyamo/' >
+                                <a href='https://www.instagram.com/d.utiyama/' >
                                     <i class='fa fa-instagram'></i>
                                 </a>
                             </li>
@@ -52,7 +60,80 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section id="aboutme" class="aboutme" id="whataboutme">
+                <div class="row align-items-center flex-row-reverse">
+                    <div class="col-lg-6">
+                        <div class="aboutme-text go-to">
+                            <h3 class="dark-color">What About Me?</h3>
+                            <h6 class="theme-color lead">Desenvolvedor .NET</h6>
+                            <p>Casado com uma mulher incrível, pai de duas filhas perfeitas, e desenvolvedor .NET, focando em integrações e criações de APIs para integração de sistemas.</p>
+                            <div class="row aboutme-list">
+                                <div class="col-md-6">
+                                    <div class="media">
+                                        <label>Aniversário</label>
+                                        <p>20 - 02</p>
+                                    </div>
+                                    <div class="media">
+                                        <label>Idade</label>
+                                        <p><span id="idadeatual"></span> anos</p>
+                                    </div>
+                                    <div class="media">
+                                        <label>País Atual</label>
+                                        <p>Brasil</p>
+                                    </div>
+                                    <div class="media">
+                                        <label>Localização</label>
+                                        <p>Campo Limpo Paulista, SP</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="media">
+                                        <label>E-mail</label>
+                                        <p>dcutiyama@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="aboutme-avatar">
+                            <img class="about-foto" src="foto_familia.jpeg" title="foto da Familia" alt="Foto Familia Daniel">
+                        </div>
+                    </div>
+                </div>
+                <div class="counter">
+                    <div class="row">
+                        <div class="col-6 col-lg-3">
+                            <div class="count-data text-center">
+                                <h6 class="count h2" data-to="7" data-speed="7">7</h6>
+                                <p class="m-0px font-w-600">Empresas trabalhadas</p>
+                            </div> 
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="count-data text-center">
+                                <h6 class="count h2" data-to="8000" data-speed="8000">>8000</h6>
+                                <p class="m-0px font-w-600">BUGs solucionados</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="count-data text-center">
+                                <h6 class="count h2" data-to="8" data-speed="15">8</h6>
+                                <p class="m-0px font-w-600">Linguagens trabalhadas</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="count-data text-center">
+                                <h6 class="count h2" data-to="15" data-speed="15">15</h6>
+                                <p class="m-0px font-w-600">Cursos de programação</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="works">
+                <div class="lastJob_historic">
+                    Histórico:
+                </div>
                 <div class="last-jobs">
                     <div class="card">
                         <div class="icon">C#</div>
@@ -105,9 +186,6 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <section>
-                
             </section>
         </div>
     </body>
