@@ -26,7 +26,7 @@ body {
 
 section{
     width: 98vw;
-    margin: 150 auto;
+    margin: 50 auto;
     padding: 35px;
 }
 
@@ -59,7 +59,7 @@ section{
 .card-front{
     height: 100%;
     width: 100%;
-    background-image: url(./foto-daniel.jpg);
+    background-image: url(./img/foto-daniel.jpg);
     background-position: 50% 50%;
     background-size: cover;
     position: absolute;
@@ -395,6 +395,16 @@ section{
     font-family: "Silkscreen", sans-serif;
 }
 
+.aboutme .historicTitle {
+    font-family: "SupernaturalKnight", sans-serif;
+    width: max-content;
+    text-align: center;
+    margin: 50px auto;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 36px;
+}
+
 .navigator{
     font-family: "Silkscreen", sans-serif;
     width: 100%;
@@ -420,4 +430,244 @@ section{
 
 .navigator .navMenu span:hover{
     color: #01E596;
+}
+
+.mytimeline{
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.mytimeline .main-timeline{
+    position: relative;
+}
+
+.mytimeline .main-timeline::before{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 100%;
+    margin: 0 auto;
+    position: absolute;
+}
+
+.mytimeline .main-timeline .timeline{
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.mytimeline .main-timeline .timeline::after{
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin: auto;
+    position: absolute;
+}
+
+.mytimeline .main-timeline .icon::before
+.mytimeline .main-timeline .icon::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.33s ease-out 0s
+}
+
+.mytimeline .main-timeline .icon::before{
+    background-color: #ffffff;
+    border: 2px solid #01E596;
+    left: -3px;
+}
+
+.mytimeline .main-timeline .icon::after{
+    border: 2px solid #01e5957a;
+    left: 3px;
+}
+
+.mytimeline .main-timeline:hover .icon::before{
+    left: 3px;
+}
+
+.mytimeline .main-timeline:hover .icon::after{
+    left: -3px;
+}
+
+.mytimeline .main-timeline .date-content{
+    width: 50%;
+    float: left;
+    margin-top: 22px;
+    position: relative;
+}
+
+.mytimeline .main-timeline .date-content:before {
+    content: "";
+    width: 36.5%;
+    height: 2px;
+    background: #ffffff;
+    margin: auto 0;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0
+}
+
+.mytimeline .main-timeline .date-outer {
+    width: 125px;
+    height: 125px;
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    z-index: 1
+}
+
+.mytimeline .main-timeline .date-outer:before,
+.mytimeline .main-timeline .date-outer:after {
+    content: "";
+    width: 125px;
+    height: 125px;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.33s ease-out 0s
+}
+
+.mytimeline .main-timeline .date-outer:before {
+    background: #ffffff;
+    border: 2px solid #01E596;
+    left: -6px
+}
+
+.mytimeline .main-timeline .date-outer::after{
+    border: 2px solid #01e5957a;
+    left: 6px;
+}
+
+.mytimeline .main-timeline .timeline:hover .date-outer:before {
+    left: 6px
+}
+
+.mytimeline .main-timeline .timeline:hover .date-outer:after {
+    left: -6px
+}
+
+.mytimeline .main-timeline .date {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 27%;
+    left: 0
+}
+
+.mytimeline .main-timeline .month {
+    font-size: 18px;
+    font-weight: 700
+}
+
+.mytimeline .main-timeline .year {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    color: #01E596;
+    line-height: 36px
+}
+
+.mytimeline .main-timeline .timeline-content {
+    width: 50%;
+    padding: 20px 0 20px 50px;
+    float: right
+}
+
+.mytimeline .main-timeline .title {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0 0 15px 0
+}
+
+.mytimeline .main-timeline .description {
+    margin-bottom: 0
+}
+
+.mytimeline .main-timeline .timeline:nth-child(2n) .date-content {
+    float: right
+}
+
+.mytimeline .main-timeline .timeline:nth-child(2n) .date-content:before {
+    left: 10px
+}
+
+.mytimeline .main-timeline .timeline:nth-child(2n) .timeline-content {
+    padding: 20px 50px 20px 0;
+    text-align: right
+}
+
+@media only screen and (max-width: 991px) {
+    .mytimeline .main-timeline .date-content {
+        margin-top: 35px
+    }
+    .mytimeline .main-timeline .date-content:before {
+        width: 22.5%
+    }
+    .mytimeline .main-timeline .timeline-content {
+        padding: 10px 0 10px 30px
+    }
+    .mytimeline .main-timeline .title {
+        font-size: 17px
+    }
+    .mytimeline .main-timeline .timeline:nth-child(2n) .timeline-content {
+        padding: 10px 30px 10px 0
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .mytimeline .main-timeline:before {
+        margin: 0;
+        left: 7px
+    }
+    .mytimeline .main-timeline .timeline {
+        margin-bottom: 20px
+    }
+    .mytimeline .main-timeline .timeline:last-child {
+        margin-bottom: 0
+    }
+    .mytimeline .main-timeline .icon {
+        margin: auto 0
+    }
+    .mytimeline .main-timeline .date-content {
+        width: 95%;
+        float: right;
+        margin-top: 0
+    }
+    .mytimeline .main-timeline .date-content:before {
+        display: none
+    }
+    .mytimeline .main-timeline .date-outer {
+        width: 110px;
+        height: 110px
+    }
+    .mytimeline .main-timeline .date-outer:before,
+    .mytimeline .main-timeline .date-outer:after {
+        width: 110px;
+        height: 110px
+    }
+    .mytimeline .main-timeline .date {
+        top: 30%
+    }
+    .mytimeline .main-timeline .year {
+        font-size: 24px
+    }
+    .mytimeline .main-timeline .timeline-content,
+    .mytimeline .main-timeline .timeline:nth-child(2n) .timeline-content {
+        width: 95%;
+        text-align: center;
+        padding: 10px 0
+    }
+    .mytimeline .main-timeline .title {
+        margin-bottom: 10px
+    }
 }
